@@ -43,12 +43,11 @@ body{
 
 form{
     position: absolute;
-    /* margin-top: 59%; */
-    margin-top: 58vh;
     display: flex;
     justify-content: center;
     left: 0;
     right: 0;
+    bottom: 40px;
 }
 
 h2{
