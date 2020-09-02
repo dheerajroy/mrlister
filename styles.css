@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    background-color: springgreen;
+}
+
+*{
+    outline: none;
+}
+
+#content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    background-color: #333;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 30px;
+}
+
+#innercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#tasksdiv{
+    /* background-color: #green; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 70%;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+form{
+    position: absolute;
+    /* margin-top: 59%; */
+    margin-top: 58vh;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+h2{
+    position: absolute;
+    justify-content: center;
+    top: 45%;
+    color: springgreen;
+}
+
+input[type='text']{
+    padding:5px;    
+    font-size: calc(12px + 0.7vw);
+    transition: 0.3s;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 3px white;
+    color: white;
+}
+
+input[type='text']:hover{
+    font-size: calc(15px + 0.7vw);
+    border-color: springgreen;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 20px;
+    display: flex;
+}
+
+li  h3{
+    margin-top: 17px;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+li p{
+    padding: 0px 20px;
+}
+
+@media (max-width: 600px){
+    #content{
+        width: 95%;
+        height: 95%;
+    }
+
+    form{
+        margin-top: 70vh
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
